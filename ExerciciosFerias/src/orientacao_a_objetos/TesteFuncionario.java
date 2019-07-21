@@ -16,6 +16,14 @@ public class TesteFuncionario {
 		func2.salario = 8000.0;
 		
 		System.out.println("Nome: " + func2.nome + ". Salário: " + func2.salario);
+		
+		System.out.println(" ");
+		//
+		
+		func1.aumentaSalario(600);
+		func1.dadosFuncionario();
+		
+		
 	}
 
 }

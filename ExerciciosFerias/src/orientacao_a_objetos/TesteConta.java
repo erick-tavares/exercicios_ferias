@@ -25,6 +25,31 @@ public class TesteConta {
 		
 		System.out.println("Agência: " + conta1.ag.numAgencia + ". Conta: " + conta1.numConta + ". Saldo: " + conta1.saldo + ". Limite: " + conta1.limite);
 		System.out.println("Agência: " + conta2.ag.numAgencia + ". Conta: " + conta2.numConta + ". Saldo: " + conta2.saldo + ". Limite: " + conta2.limite);
+//
+		System.out.println(" ");
+		
+		//
+		conta1.impressaoDeExtrato();
+		
+		System.out.println("Deposito de 100 reais");
+		
+		conta1.deposito(100.00);
+		
+		System.out.println(conta1.saldo);
+		//
+		
+		//
+		conta1.impressaoDeExtrato();
+		
+		System.out.println("Saque de 300 reais");
+		
+		conta1.saque(300.00);
+		
+		System.out.println(conta1.saldo);
+		//
+		
+		System.out.println("limite disponível: " + conta1.consultaSaldo());
+	
 	}
 
 }
