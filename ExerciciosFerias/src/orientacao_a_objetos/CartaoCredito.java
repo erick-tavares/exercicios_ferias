@@ -4,4 +4,5 @@ public class CartaoCredito {
 
 	int numCartao;
 	String validadeCartao;
+	ClienteBanco cliente;
 }

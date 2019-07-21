@@ -5,4 +5,5 @@ public class Aluno {
 	String nome;
 	String rg;
 	String dtNascimento;
+	Turma turma;
 }
