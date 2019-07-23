@@ -1,6 +1,6 @@
 package classe_abstrata;
 
-public class Conta {
+public abstract class Conta {
 
 	String titular;
 	double saldo;
@@ -17,6 +17,8 @@ public class Conta {
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
+	
+	public abstract void geraExtrato ();
 	
 	
 }
