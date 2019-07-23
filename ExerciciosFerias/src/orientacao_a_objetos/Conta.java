@@ -7,6 +7,13 @@ public class Conta {
 	double limite = 100.0;
 	Agencia ag;
 	
+	Conta (int numConta, double saldo, double limite, Agencia ag){
+		this.numConta = numConta;
+		this.saldo = saldo;
+		this.limite = limite;
+		this.ag = ag;
+	}
+	
 	public void deposito(double valor) {
 		this.saldo += valor;
 	}
@@ -21,7 +28,11 @@ public class Conta {
 	
 	public double consultaSaldo() {
 		return this.saldo + this.limite;
-		
+	}
+	
+	public void transferencia(Conta destino, double valor) {
+		this.saldo -= valor;
+		destino.saldo += valor;
 	}
 }
 	

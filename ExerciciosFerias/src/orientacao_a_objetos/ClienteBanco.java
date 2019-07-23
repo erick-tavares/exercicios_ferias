@@ -4,4 +4,5 @@ public class ClienteBanco {
 
 	String nome;
 	int cdCliente;
+	
 }
