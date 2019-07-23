@@ -23,17 +23,17 @@ public class TesteFuncionario {
 		System.out.println("Gerente: " + g.getNome());
 		System.out.println("Salário: " + g.getSalario());
 		System.out.println("Senha: " + g.getSenha());
-		g.bonificacao(0.10);
+		System.out.println("Bonificação: " + g.bonificacao());
 		
 		System.out.println("Secretaria: " + s.getNome());
 		System.out.println("Salário: " + s.getSalario());
 		System.out.println("Ramal: " + s.getRamal());
-		s.bonificacao(0.10);
+		System.out.println("Bonificação: " + s.bonificacao());
 		
 		System.out.println("Telefonista: " + t.getNome());
 		System.out.println("Salário: " + t.getSalario());
 		System.out.println("Estação de trabalho: " + t.getCdEstacao());
-		t.bonificacao(0.10);
+		System.out.println("Bonificação: " + t.bonificacao());
 		/*
 		Funcionario func1 = new Funcionario();
 			func1.setSalario(2000);

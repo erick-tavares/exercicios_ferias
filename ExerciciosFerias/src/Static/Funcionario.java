@@ -29,8 +29,9 @@ public class Funcionario {
 	}
 
 
-public void bonificacao(double valor) {
-	this.salario *= valor;
-	System.out.println("Bonificação: " + this.salario);
+public double bonificacao() {
+	double valor = 0.10;
+	return this.salario *= valor;
+	
 }
 }
