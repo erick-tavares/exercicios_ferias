@@ -2,8 +2,8 @@ package classe_abstrata;
 
 public abstract class Conta {
 
-	String titular;
-	double saldo;
+	private String titular;
+	private double saldo;
 	
 	public String getTitular() {
 		return titular;

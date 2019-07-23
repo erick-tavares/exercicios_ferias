@@ -2,8 +2,9 @@ package polimorfismo;
 
 public class Funcionario {
 
-	String nome;
-	double salario;
+	private	String nome;
+	private double salario;
+	
 	public String getNome() {
 		return nome;
 	}
