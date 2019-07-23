@@ -5,7 +5,7 @@ public class TesteArray {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int [] numero = new int []{4,6,3,8,9};
+		int [] numero = new int [10];
 		
 		for (int i = 0; i < numero.length; i++) {
 			numero [i] = i;
