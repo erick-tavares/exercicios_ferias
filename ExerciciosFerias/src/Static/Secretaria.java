@@ -12,5 +12,7 @@ public class Secretaria extends Funcionario {
 		this.ramal = ramal;
 	}
 	
-	
+	public void exibeDados() {
+		System.out.println("Nome: "+getNome ()+". Salário: " + getSalario() + ". Bonificação: "+bonificacao ()+ ". Ramal: "+ getRamal());
+	}
 }

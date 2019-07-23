@@ -20,20 +20,10 @@ public class TesteFuncionario {
 		t.setSalario(2200.0);
 		t.setCdEstacao("456");
 		
-		System.out.println("Gerente: " + g.getNome());
-		System.out.println("Salário: " + g.getSalario());
-		System.out.println("Senha: " + g.getSenha());
-		System.out.println("Bonificação: " + g.bonificacao());
-		
-		System.out.println("Secretaria: " + s.getNome());
-		System.out.println("Salário: " + s.getSalario());
-		System.out.println("Ramal: " + s.getRamal());
-		System.out.println("Bonificação: " + s.bonificacao());
-		
-		System.out.println("Telefonista: " + t.getNome());
-		System.out.println("Salário: " + t.getSalario());
-		System.out.println("Estação de trabalho: " + t.getCdEstacao());
-		System.out.println("Bonificação: " + t.bonificacao());
+		g.exibeDados();
+		s.exibeDados();
+		t.exibeDados();
+	
 		/*
 		Funcionario func1 = new Funcionario();
 			func1.setSalario(2000);

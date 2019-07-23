@@ -32,6 +32,9 @@ public class Funcionario {
 public double bonificacao() {
 	double valor = 0.10;
 	return this.salario *= valor;
-	
+}
+
+public void exibeDados() {
+	System.out.println("Nome: "+getNome ()+". Salário: " + getSalario() + ". Bonificação: "+bonificacao ());
 }
 }
