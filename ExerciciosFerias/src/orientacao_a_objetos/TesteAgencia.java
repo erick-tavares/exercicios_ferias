@@ -9,7 +9,7 @@ public class TesteAgencia {
 		
 		Agencia ag2 = new Agencia (789);
 		
-		System.out.println(ag1.numAgencia + "\n" + ag2.numAgencia);
+		System.out.println(ag1.getNumAgencia() + "\n" + ag2.getNumAgencia());
 	}
 
 }

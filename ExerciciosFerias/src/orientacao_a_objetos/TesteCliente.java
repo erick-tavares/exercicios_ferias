@@ -7,14 +7,14 @@ public class TesteCliente {
 
 		ClienteBanco cli1 = new ClienteBanco();
 		ClienteBanco cli2 = new ClienteBanco();
-		cli1.nome = "Erick Tavares";
-		cli1.cdCliente = 23425;
+		cli1.setNome("Erick Tavares");
+		cli1.setCdCliente(23425);
 		
-		cli2.cdCliente = 43567;
-		cli2.nome = "Eduardo Tavares";
+		cli2.setCdCliente(43567);
+		cli2.setNome("Eduardo Tavares");
 		
-		System.out.println("Nome: " + cli1.nome + ". Cd:" + cli1.cdCliente);
-		System.out.println("Nome: " + cli2.nome + ". Cd:" + cli2.cdCliente);
+		System.out.println("Nome: " + cli1.getNome() + ". Cd:" + cli1.getCdCliente());
+		System.out.println("Nome: " + cli2.getNome() + ". Cd:" + cli2.getCdCliente());
 
 	}
 

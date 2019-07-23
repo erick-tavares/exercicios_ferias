@@ -6,16 +6,16 @@ public class TesteFuncionario {
 		// TODO Auto-generated method stub
 
 		Funcionario func1 = new Funcionario();
-		func1.nome = "Alício Cunha";
-		func1.salario = 8000.0;
+		func1.setNome("Alício Cunha");
+		func1.setSalario(8000.0);
 		
-		System.out.println("Nome: " + func1.nome + ". Salário: " + func1.salario);
+		System.out.println("Nome: " + func1.getNome() + ". Salário: " + func1.getSalario());
 
 		Funcionario func2 = new Funcionario();
-		func2.nome = "Edwin Bramchen";
-		func2.salario = 8000.0;
+		func2.setNome("Edwin Bramchen");
+		func2.setSalario(8000.0);
 		
-		System.out.println("Nome: " + func2.nome + ". Salário: " + func2.salario);
+		System.out.println("Nome: " + func2.getNome() + ". Salário: " + func2.getSalario());
 		
 		System.out.println(" ");
 		//

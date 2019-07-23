@@ -7,29 +7,29 @@ public class TesteAluno {
 
 		Aluno aluno1 = new Aluno ();
 		Turma turma1 = new Turma();
-		turma1.materia = "Java";
-		turma1.serie = "1º ano";
-		turma1.periodo = "Noturno";
-		turma1.sigla = "A";
+		turma1.setMateria("Java");
+		turma1.setSerie("1º ano");
+		turma1.setPeriodo("Noturno");
+		turma1.setSigla("A");
 		
-		aluno1.turma = turma1;
-		aluno1.nome = "Bento Silva";
-		aluno1.rg = "3456789";
-		aluno1.dtNascimento = "23/08/2000";
+		aluno1.setTurma(turma1);
+		aluno1.setNome("Bento Silva");
+		aluno1.setRg("3456789");
+		aluno1.setDtNascimento("23/08/2000");
 				
-		System.out.println("Nome: " + aluno1.nome + "\n" + "Turma: " + aluno1.turma.materia +  
-				". Série: " + aluno1.turma.serie + ". Período: " + aluno1.turma.periodo + ". Sigla: " + aluno1.turma.sigla);
+		System.out.println("Nome: " + aluno1.getNome() + "\n" + "Turma: " + aluno1.getTurma().getMateria() +  
+				". Série: " + aluno1.getTurma().getSerie() + ". Período: " + aluno1.getTurma().getPeriodo() + ". Sigla: " + aluno1.getTurma().getSigla());
 		
 		Aluno aluno2 = new Aluno ();
 		Turma turma2 = new Turma();
-		turma2.materia = "Java";
+		turma2.setMateria("Java");
 		
-		aluno2.turma = turma2;
-		aluno2.nome = "Carlos Silva";
-		aluno2.rg = "3456776";
-		aluno2.dtNascimento = "23/10/2000";
+		aluno2.setTurma(turma2);
+		aluno2.setNome("Carlos Silva");
+		aluno2.setRg("3456776");
+		aluno2.setDtNascimento("23/10/2000");
 				
-		System.out.println("Turma: " + aluno2.turma.materia + ". Nome: " + aluno2.nome + ". RG: " + aluno2.rg + ". Data de nascimento " + aluno2.dtNascimento);
+		System.out.println("Turma: " + aluno2.getTurma().getMateria() + ". Nome: " + aluno2.getNome() + ". RG: " + aluno2.getRg() + ". Data de nascimento " + aluno2.getDtNascimento());
 	
 	}
 
