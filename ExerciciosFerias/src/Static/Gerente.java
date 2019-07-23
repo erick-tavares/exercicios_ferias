@@ -24,7 +24,7 @@ public class Gerente extends Funcionario{
 	}
 	
 	public void exibeDados() {
-		System.out.println("Nome: "+getNome ()+". Salário: " + getSalario() + ". Bonificação: "+bonificacao () +"Senha: " + getSenha());
+		System.out.println("Nome: "+getNome ()+". Salário: " + getSalario() + ". Bonificação: "+bonificacao () +". Senha: " + getSenha());
 	}
 
 }
