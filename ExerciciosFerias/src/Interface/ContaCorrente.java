@@ -10,7 +10,7 @@ public class ContaCorrente implements Conta{
 		this.saldo = saldo;
 	}
 	
-	public void deposita(double valor) {
+	public void depositar(double valor) {
 		this.saldo += valor;
 	}
 	
