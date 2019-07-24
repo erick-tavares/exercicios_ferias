@@ -2,15 +2,26 @@ package Interface;
 
 public class ContaCorrente implements Conta{
 
-	String titular;
-	double saldo;
+	private String titular;
+	private double saldo;	
 	
-	ContaCorrente(String titular, double saldo){
+	public String getTitular() {
+		return titular;
+	}
+
+	public void setTitular(String titular) {
 		this.titular = titular;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-	
-	public void depositar(double valor) {
+
+	public void deposita(double valor) {
 		this.saldo += valor;
 	}
 	

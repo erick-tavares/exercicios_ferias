@@ -5,18 +5,28 @@ public class TesteConta {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ContaPoupanca cp = new ContaPoupanca("Arthur Tavares", 5000.0);
-		ContaCorrente cc = new ContaCorrente("Erick Tavares", 2000.0);
+		GerarExtrato g = new GerarExtrato();
 		
-		System.out.println(cp.saldo);
-		cp.deposita(500);
-		System.out.println(cp.saldo);
+
 		
-		System.out.println(cc.saldo);
-		cc.saque(800);
-		System.out.println(cc.saldo);
-	
+		ContaPoupanca cp = new ContaPoupanca();
+		cp.setTitular("Arthur Tavares");
+		cp.setSaldo(5000.0);
 		
+		ContaCorrente cc = new ContaCorrente();
+		cc.setTitular("Erick Tavares");
+		cc.setSaldo(2000.0);
+		
+		System.out.println("Conta corrente");
+		
+		g.gerarExtrato(cc);
+		cc.deposita(500);
+		g.gerarExtrato(cc);
+		
+		System.out.println("Conta poupança");
+		g.gerarExtrato(cp);
+		cp.saque(600);
+		g.gerarExtrato(cp);
 	
 	}
 

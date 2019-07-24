@@ -3,13 +3,25 @@ package Interface;
 public class ContaPoupanca implements Conta {
 
 
-	String titular;
-	double saldo;
+	private String titular;
+	private double saldo;
 	
-	ContaPoupanca (String titular, double saldo){
+	public String getTitular() {
+		return titular;
+	}
+
+	public void setTitular(String titular) {
 		this.titular = titular;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
+
 	public void deposita(double valor) {
 		this.saldo += valor;
 	}
